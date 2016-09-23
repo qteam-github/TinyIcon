@@ -588,10 +588,10 @@ public final class TinyIcon
 		<p>Here are some examples:
 
 		<p>{@code // Get the first compressed image with height >= 256 and bpp = 32}<br>
-		{@code final Icon ico1 = ti.getIcon (i -> (i.isPng () && (i.getHeight () >= 256) && (i.getBpp () == 32)));}
+		{@code final BufferedImage img1 = ti.getImage (i -> (i.isPng () && (i.getHeight () >= 256) && (i.getBpp () == 32)));}
 
 		<p>{@code // Get the first image with width >= 128 or bpp < 8}<br>
-		{@code final Icon ico2 = ti.getIcon (i -> (i.getWidth () >= 128) || (i.getBpp () < 8)));}
+		{@code final BufferedImage img2 = ti.getImage (i -> (i.getWidth () >= 128) || (i.getBpp () < 8)));}
 
 		<p>where {@code ti} is a constructed {@code TinyIcon}.
 
@@ -648,10 +648,10 @@ public final class TinyIcon
 		<p>Here are some examples:
 
 		<p>{@code // Get the first image data with height = 512}<br>
-		{@code final byte ico1 [] = ti.getIcon (i -> (i.getHeight () == 512));}
+		{@code final byte ico1 [] = ti.getImageAsPng (i -> (i.getHeight () == 512));}
 
 		<p>{@code // Get the first compressed image data with bpp >= 24}<br>
-		{@code final byte ico2 [] = ti.getIcon (i -> (i.isPng () && (i.getBpp () >= 24)));}
+		{@code final byte ico2 [] = ti.getImageAsPng (i -> (i.isPng () && (i.getBpp () >= 24)));}
 
 		<p>where {@code ti} is a constructed {@code TinyIcon}.
 

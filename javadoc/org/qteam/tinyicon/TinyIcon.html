@@ -568,10 +568,10 @@ extends java.lang.Object</pre>
                 <p>Here are some examples:
 
                 <p><code>// Get the first compressed image with height &gt;= 256 and bpp = 32</code><br>
-                <code>final Icon ico1 = ti.getIcon (i -&gt; (i.isPng () &amp;&amp; (i.getHeight () &gt;= 256) &amp;&amp; (i.getBpp () == 32)));</code>
+                <code>final BufferedImage img1 = ti.getImage (i -&gt; (i.isPng () &amp;&amp; (i.getHeight () &gt;= 256) &amp;&amp; (i.getBpp () == 32)));</code>
 
                 <p><code>// Get the first image with width &gt;= 128 or bpp &lt; 8</code><br>
-                <code>final Icon ico2 = ti.getIcon (i -&gt; (i.getWidth () &gt;= 128) || (i.getBpp () &lt; 8)));</code>
+                <code>final BufferedImage img2 = ti.getImage (i -&gt; (i.getWidth () &gt;= 128) || (i.getBpp () &lt; 8)));</code>
 
                 <p>where <code>ti</code> is a constructed <code>TinyIcon</code>.</div>
 <dl>
@@ -641,10 +641,10 @@ extends java.lang.Object</pre>
                 <p>Here are some examples:
 
                 <p><code>// Get the first image data with height = 512</code><br>
-                <code>final byte ico1 [] = ti.getIcon (i -&gt; (i.getHeight () == 512));</code>
+                <code>final byte ico1 [] = ti.getImageAsPng (i -&gt; (i.getHeight () == 512));</code>
 
                 <p><code>// Get the first compressed image data with bpp &gt;= 24</code><br>
-                <code>final byte ico2 [] = ti.getIcon (i -&gt; (i.isPng () &amp;&amp; (i.getBpp () &gt;= 24)));</code>
+                <code>final byte ico2 [] = ti.getImageAsPng (i -&gt; (i.isPng () &amp;&amp; (i.getBpp () &gt;= 24)));</code>
 
                 <p>where <code>ti</code> is a constructed <code>TinyIcon</code>.</div>
 <dl>
