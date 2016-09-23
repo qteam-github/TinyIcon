@@ -83,7 +83,7 @@ import java.io.*;
 		{@code final ArrayList <BufferedImage> images = ti.extractImages (i -> ((i.getWidth () > 16) && (i.getBpp () < 32)));}
 	</blockquote>
 
-	<p>GitHub page: <a href="https://github.com/qteam-/TinyIcon">https://github.com/qteam-github/TinyIcon</a>
+	<p>GitHub page: <a href="https://github.com/qteam-github/TinyIcon">https://github.com/qteam-github/TinyIcon</a>
 	@author darq
 */
 public final class TinyIcon
