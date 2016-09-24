@@ -10,10 +10,11 @@ TinyIcon is a very small java library that allows to load and decode the Microso
 - Supports compressed icons
 - Supports icon sorting
 - Supports icon searching
+- Reads favicons
 - Allows to extract a subset of icons
 
 ## Requirements
-- JRE 8. The library uses lots of new java 8 features such as lambdas, streams, predicates, etc.
+- Java 8. The library uses lots of new java features such as lambdas, streams, predicates, etc.
 - [*Optional*] Netbeans IDE if you want to compile the library itself
 
 ## Getting Started
@@ -55,9 +56,9 @@ Online javadoc is available [here](https://rawgit.com/qteam-github/TinyIcon/mast
 Offline javadoc is already included in the [release zip](https://github.com/qteam-github/TinyIcon/releases/download/v090/tinyicon_090.zip).
 
 ## How to compile?
-Usually you just need to download the final jar, but if you wish to compile the library itself (for example if you want contribute with a pull request), you only need the NetBeans IDE and to clone this repository.<br/>
+Usually you just need to download the final jar, but if you wish to compile the library itself (for example if you want to contribute with a pull request), you only need the NetBeans IDE and to clone this repository.<br/>
 
 To compile (*Clean and Build* action) just press '*SHIFT + F11*' (No other external libraries are required).<br/>
 
-The only thing to care about is the [tinyicon.release.dir](https://github.com/qteam-github/TinyIcon/blob/master/build.xml#L16) variable in build.xml. This variable is used to copy, with an ant task, all release files into a destination directory and its default value is set to ```d:/javalibs/tinyicon```.<br/>
+The only thing to care about is the [tinyicon.release.dir](https://github.com/qteam-github/TinyIcon/blob/master/build.xml#L16) variable in build.xml. This variable is used to copy, with an *ant task*, all release files into a destination directory and its default value is set to ```d:/javalibs/tinyicon```.<br/>
 The output directory is automatically created (even if it doesn't exist), but if you don't have a "*D:/*" drive, an error will occur after compiling, so you need to change the value to an existent drive (e.g. "*C:/*") and a *writable* folder.
